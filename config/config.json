@@ -1,0 +1,60 @@
+{
+    "bridge": {
+        "name": "Homebridge",
+        "username": "CC:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "117-11-171"
+    },
+    
+    "description": "This is an example configuration file with one fake accessory and one fake platform. You can use this as a template for creating your own configuration file containing devices you actually own.",
+
+    "accessories": [
+        {
+            "accessory": "RCSwitch",
+            "name": "Bedroom Light",
+	    "onCode": 89347,
+	    "offCode": 89356,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24,
+            "repeats": 10
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Living Room Light",
+            "onCode": 95491,
+            "offCode": 95500,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24,
+            "repeats": 10
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "AC Unit",
+            "onCode": 87491,
+            "offCode": 87500,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24,
+            "repeats": 10
+        },
+        {
+            "accessory": "RCSwitch",
+            "name": "Desk Lamp",
+            "onCode": 87347,
+            "offCode": 87356,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24,
+            "repeats": 10
+        },
+	{
+	    "accessory": "CMD",
+	    "name": "Ubuntu Monitors",
+	    "on_cmd": "ssh -x -y root@192.168.1.5 'sudo turnonmonitor'",
+	    "off_cmd": "ssh -x -y root@192.168.1.5 'sudo turnoffmonitor'"
+	}
+    ]
+
+}
