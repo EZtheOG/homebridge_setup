@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# For Ubuntu Machine
+# Place in /usr/local/bin
+
+export DISPLAY=:0
+sleep 1 && xset dpms force off
+#xrandr --output DVI-I-1 --off && xrandr --output DP-1 --off
+

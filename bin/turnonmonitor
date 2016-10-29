@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# For Ubuntu Machine
+# Put in /usr/local/bin
+
+export DISPLAY=:0
+sleep 1 && xset dpms force on
+
+#sleep 1
+#gnome-screensaver-command --lock && sleep 2s && xset dpms force off
+#xrandr --output DVI-I-1 --left-of DP-1 --auto && xrandr--output DP-1 --right-of DVI-I-1 --auto 
+
+
