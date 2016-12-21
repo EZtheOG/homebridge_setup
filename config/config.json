@@ -49,6 +49,16 @@
             "bitLength": 24,
             "repeats": 10
         },
+        {
+            "accessory": "RCSwitch",
+            "name": "Christmas Tree",
+            "onCode": 87811,
+            "offCode": 87820,
+            "pin": 17,
+            "pulseLength": 190,
+            "bitLength": 24,
+            "repeats": 10
+        },
 	{
 	    "accessory": "CMD",
 	    "name": "Ubuntu Monitors",
