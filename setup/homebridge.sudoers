@@ -1,0 +1,3 @@
+# allow homebridge to run sudo
+
+homebridge ALL=(ALL) NOPASSWD:ALL
