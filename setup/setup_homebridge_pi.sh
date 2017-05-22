@@ -20,9 +20,6 @@ wait
 git clone git://git.drogon.net/wiringPi
 wait
 
-git clone https://github.com/EZtheOG/homebridge_setup
-wait
-
 git clone https://github.com/ManiacalLabs/BiblioPixel
 wait
 
