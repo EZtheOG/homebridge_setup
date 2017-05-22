@@ -3,48 +3,48 @@
 #
 # This script is to setup a raspberry pi from scratch as opposed to doing it manually
 #
-declare -a npm_pkg=('homebridge' 'hap-nodejs' 'node-gyp' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2')
+declare -a npm_pkg=('homebridge' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2')
 
-# echo "starting install of packages"
-# echo
-# echo
+echo "starting install of packages"
+echo
+echo
 
-# apt-get install git-core gcc build-essential git make libssl-dev vim -y
-# wait
+apt-get install git-core gcc build-essential git make libssl-dev vim libavahi-compat-libdnssd-dev -y
+wait
 
-# echo "starting git clone"
+echo "starting git clone"
 
-# cd /opt
-# git clone https://github.com/timleland/rfoutlet
-# wait
+cd /opt
+git clone https://github.com/timleland/rfoutlet
+wait
 
-# git clone git://git.drogon.net/wiringPi
-# wait
+git clone git://git.drogon.net/wiringPi
+wait
 
-# git clone https://github.com/ManiacalLabs/BiblioPixel
-# wait
+git clone https://github.com/ManiacalLabs/BiblioPixel
+wait
 
-# echo 
-# echo
-# echo "set hostname to homebridge"
-# echo
-# sed -i 's/raspberrypi/homebridge/g' /etc/hosts
-# sed -i 's/raspberrypi/homebridge/g' /etc/hostname
-# echo
+echo 
+echo
+echo "set hostname to homebridge"
+echo
+sed -i 's/raspberrypi/homebridge/g' /etc/hosts
+sed -i 's/raspberrypi/homebridge/g' /etc/hostname
+echo
 
-# echo "installing nodejs"
-# curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
-# wait
-# apt-get install nodejs -y
+echo "installing nodejs"
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+wait
+apt-get install nodejs -y
 
-# echo
-# echo "installing GPIO via WiringPi"
-# cd /opt/wiringPi
-# ./build
-# wait
+echo
+echo "installing GPIO via WiringPi"
+cd /opt/wiringPi
+./build
+wait
 
-# useradd --system homebridge
-# sleep .5
+useradd --system homebridge
+sleep .5
 
 echo "installing homebridge"
 echo
