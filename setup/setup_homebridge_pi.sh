@@ -47,7 +47,7 @@ sleep .5
 
 echo "installing homebridge"
 echo
-declare -a npm_pkg=("homebridge" "hap-nodejs" "node-gyp" "homebridge-rcswitch-gpiomem" "homebridge-platform-lightify" "homebridge-cmdswitch2")
+declare -a npm_pkg=('homebridge' 'hap-nodejs' 'node-gyp' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2')
 
 for i in "${npm_pkg}"; do
 	npm install --global --unsafe-perm $i
