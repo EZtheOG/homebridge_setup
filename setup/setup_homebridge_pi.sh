@@ -58,10 +58,12 @@ done
 mkdir /etc/homebridge
 cp /opt/homebridge_setup/config/config.json /etc/homebridge/
 cp /opt/homebridge_setup/config/homebridge.init /etc/init.d/homebridge
+cp /opt/homebridge_setup/setup/homebridge.sudoers /etc/sudoers.d/homebridge
 chown -R /etc/homebridge
 chmod -R 0700 /etc/homebridge
 chmod 755 /etc/init.d/homebridge
 sleep .5
+
 
 echo "homebridge is setup"
 echo 
