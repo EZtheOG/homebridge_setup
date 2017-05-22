@@ -3,6 +3,7 @@
 #
 # This script is to setup a raspberry pi from scratch as opposed to doing it manually
 #
+declare -a npm_pkg=('homebridge' 'hap-nodejs' 'node-gyp' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2')
 
 echo "starting install of packages"
 echo
@@ -47,7 +48,6 @@ sleep .5
 
 echo "installing homebridge"
 echo
-declare -a npm_pkg=('homebridge' 'hap-nodejs' 'node-gyp' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2')
 
 for i in "${npm_pkg}"; do
 	npm install --global --unsafe-perm $i
