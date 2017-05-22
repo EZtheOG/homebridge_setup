@@ -10,7 +10,7 @@
 ### END INIT INFO
 
 dir="/etc/homebridge"
-cmd="/usr/bin/homebridge -U /etc/homebridge/config.json"
+cmd="/usr/bin/homebridge -U /etc/homebridge"
 user="homebridge"
 
 name=`basename $0`
