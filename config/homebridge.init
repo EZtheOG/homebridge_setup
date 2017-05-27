@@ -10,7 +10,7 @@
 ### END INIT INFO
 
 dir="/etc/homebridge"
-cmd="/usr/bin/homebridge -U /etc/homebridge"
+cmd="sudo /usr/bin/homebridge -U /etc/homebridge"
 user="homebridge"
 
 name=`basename $0`
