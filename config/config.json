@@ -11,7 +11,7 @@
     "accessories": [
         {
             "accessory": "RCSwitch",
-            "name": "Bedroom Lamp",
+            "name": "Office Fan",
 	        "onCode": 89347,
 	        "offCode": 89356,
             "pin": 17,
@@ -58,20 +58,19 @@
             "pulseLength": 190,
             "bitLength": 24,
             "repeats": 10
+        },
+        {
+          "accessory": "Sonos",
+          "name": "Bedroom Speakers",
+          "room": "Bedroom",
+          "mute": true
         }
     ],
     "platforms": [{
             "platform": "Lightify",
             "host": "192.168.1.3"
         },
-        {
-            "platform": "cmdSwitch2",
-            "name": "Ubuntu Monitors",
-            "switches": [{
-                "name": "monitors",
-                "on_cmd": "ssh -x -y root@192.168.1.5 'sudo turnonmonitor'",
-                "off_cmd": "ssh -x -y root@192.168.1.5 'sudo turnoffmonitor'"
-            }]
+      ]
         }
     ]
 }
