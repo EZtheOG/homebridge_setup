@@ -69,6 +69,15 @@
     "platforms": [{
             "platform": "Lightify",
             "host": "192.168.1.3"
+        },{
+            "platform": "SensiboSky",
+            "name": "Office Air",
+            "apiKey": "YOUR_SENSIBO_API_ID",
+            "timeLapse": 300,
+        },{
+            "platform": "Sensibo",
+            "name": "Bedroom Air",
+            "apiKey": "YOUR_SENSIBO_API_ID"         
         }
     ]
 }
