@@ -73,11 +73,10 @@
             "platform": "SensiboSky",
             "name": "Office Air",
             "apiKey": "YOUR_SENSIBO_API_ID",
-            "timeLapse": 300,
+            "timeLapse": 60
         },{
-            "platform": "Sensibo",
-            "name": "Bedroom Air",
-            "apiKey": "YOUR_SENSIBO_API_ID"         
-        }
+           "platform": "BelkinWeMo",
+           "name": "WeMo Platform"
+       }
     ]
 }
