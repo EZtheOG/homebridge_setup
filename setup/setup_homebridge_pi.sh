@@ -3,7 +3,7 @@
 #
 # This script is to setup a raspberry pi from scratch as opposed to doing it manually
 #
-declare -a npm_pkg=('homebridge' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2' 'homebridge-sonos')
+declare -a npm_pkg=('homebridge' 'homebridge-rcswitch-gpiomem' 'homebridge-platform-lightify' 'homebridge-cmdswitch2' 'homebridge-sonos' 'homebridge-platform-wemo')
 
 echo "starting install of packages"
 echo
