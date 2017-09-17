@@ -73,7 +73,7 @@ cp /opt/homebridge_setup/setup/homebridge.sudoers /etc/sudoers.d/homebridge
 chown -R homebridge /etc/homebridge
 
 # Modify folder properties
-chmod -R 0700 homebridge /etc/homebridge
+chmod -R 0700 /etc/homebridge
 chmod 755 /etc/init.d/homebridge
 sleep .5
 
