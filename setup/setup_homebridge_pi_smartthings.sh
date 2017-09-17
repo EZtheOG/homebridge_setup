@@ -7,9 +7,9 @@ declare -a npm_pkg=('homebridge' 'homebridge-smartthings' 'homebridge-smartthing
 
 # Update Raspbian OS
 echo "Updating OS"
-sudo apt-get update
+apt-get update
 wait
-sudo apt-get -y upgrade
+apt-get -y upgrade
 wait
 
 
@@ -17,8 +17,8 @@ echo "starting install of packages"
 echo
 echo
 
-# 
-sudo apt-get install git-core gcc build-essential git make libssl-dev vim libavahi-compat-libdnssd-dev -y
+# Install git and Avahi dependencies needed by Homebridge
+apt-get install git-core gcc build-essential git make libssl-dev vim libavahi-compat-libdnssd-dev -y
 wait
 
 # Copy files from Git respository
@@ -42,7 +42,7 @@ echo
 echo "installing nodejs"
 curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
 wait
-sudo apt-get install nodejs -y
+apt-get install nodejs -y
 
 echo
 wait
