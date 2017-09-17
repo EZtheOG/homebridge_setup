@@ -5,6 +5,12 @@
 #
 declare -a npm_pkg=('homebridge' 'homebridge-smartthings' 'homebridge-smartthings-routine-triggers')
 
+echo "Updating OS"
+sudo apt-get update
+wait
+sudo apt-get -y upgrade
+wait
+
 echo "starting install of packages"
 echo
 echo
