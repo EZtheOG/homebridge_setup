@@ -10,3 +10,20 @@ This install script installs a Homebridge sudoers file that allows the HB user s
 The files under the bin directory are deprecated Bash scripts that are used to turn off monitors in a Linux OS. These scripts work just keeping for historical record. 
 
 Then the config.json file is my HB config file, if you use this install script adjust accordingly. 
+
+# To Use
+* First, fork the repo
+* Second, Edit the ARRAY of NPM plugins and whatever else you desire in the script
+* Run Script as Sudo
+
+## Note - I create all the Github Directories in /opt
+I clone this repo in /opt and this script assumes that is to be true.
+All Github Repos, things I need for my homebridge setup, are in /opt. After Clone/Pull then I move accordingly. For example, after Homebridge is installed, I make an /etc/homebridge directory and place my config file there. Homebridge is installed in /usr/bin/homebridge. 
+
+Anytime I make an update to my repo, I cd into the /opt dir and pull. Then, I backup the file:
+* (e.g) mv /etc/homebridge/config.json /etc/homebridge/config.bak
+Copy the file manually:
+* sudo cp ./config.json /etc/homebridge/
+then test.
+
+God speed
