@@ -12,8 +12,8 @@
         {
             "accessory": "RCSwitch",
             "name": "Office Fan",
-	        "onCode": 89347,
-	        "offCode": 89356,
+	    "onCode": 89347,
+	    "offCode": 89356,
             "pin": 17,
             "pulseLength": 190,
             "bitLength": 24,
