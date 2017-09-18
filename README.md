@@ -22,8 +22,9 @@ All Github Repos, things I need for my homebridge setup, are in /opt. After Clon
 
 Anytime I make an update to my repo, I cd into the /opt dir and pull. Then, I backup the file:
 * (e.g) mv /etc/homebridge/config.json /etc/homebridge/config.bak
-Copy the file manually:
+* Copy the file manually:
 * sudo cp ./config.json /etc/homebridge/
+
 then test.
 
 God speed
