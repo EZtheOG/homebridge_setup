@@ -1,5 +1,7 @@
 # homebridge_setup
 
+### FYI - only for Ubuntu/Rasbian 
+
 This repo is to manage an internal use of Homebridge (HB), and to redeploy a lost Homebridge server. 
 
 The first aspect is to clone the repo and run the script (setup_homebridge_pi.sh),
